@@ -62,3 +62,10 @@ for ( let i = 0; i < changedCSV.length; i++) {
 
 let averageAge = ageSum / changedCSV.length;
 
+//part 5
+let finalCSV = [header.join(",")];
+for (let i = 0; i < changedCSV.length; i++) {
+    let row = Object.values(changedCSV[i]).join(",");
+    finalCSV.push(row);
+}
+finalCSV = finalCSV.join("\n");
